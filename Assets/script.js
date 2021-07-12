@@ -4,12 +4,6 @@ let multiplier = 1;
 let groot = document.getElementById("groot1");
 let price = 10;
 
-
-//groot.addEventListener("click", e=> {
-//	++guardianCounter;
-//	console.log(guardianCounter);
-//})
-
 let countElement = document.getElementById("count");
 groot.addEventListener("click", () => {
 	score += guardianCounter * multiplier;
@@ -23,7 +17,7 @@ const callMultiplier = (m) => {
 		multiplier = multiplier*m;
 		score = score - 10;
 		countElement.innerHTML = score;
-
+		
 }
  
 
