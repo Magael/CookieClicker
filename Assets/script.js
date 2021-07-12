@@ -2,7 +2,7 @@ let guardianCounter=1;
 let score = 0;
 let multiplier = 1;
 let groot = document.getElementById("groot1");
-let price = 10;
+let price = 0;
 
 
 //groot.addEventListener("click", e=> {
