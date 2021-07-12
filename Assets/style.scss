@@ -5,4 +5,6 @@ $MyColor: white;
 body{
     background-image: url(/Assets/img/Espace.jpg);
     color:$MyColor;
+    display: flex;
+    justify-content: center;
 }

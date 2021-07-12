@@ -1,4 +1,6 @@
 body {
   background-image: url(/Assets/img/Espace.jpg);
   color: white;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
