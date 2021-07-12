@@ -1,5 +1,9 @@
-let guardianCounter=0;
+let guardianCounter=1;
+let score = 0;
+let multiplier = 1;
 let groot = document.getElementById("groot1");
+let price = 10;
+
 
 //groot.addEventListener("click", e=> {
 //	++guardianCounter;
@@ -7,39 +11,23 @@ let groot = document.getElementById("groot1");
 //})
 
 let countElement = document.getElementById("count");
-    groot.addEventListener("click", e=> {
-    ++guardianCounter;
-    console.log(guardianCounter);
-    countElement.innerHTML = guardianCounter;
+groot.addEventListener("click", () => {
+	score += guardianCounter * multiplier;
+ console.log(score);
+ countElement.innerHTML = score;
 })
 
-/*var cps = 0;
-var cursorCount = 0;
-var cursorCost = 0;
+const callMultiplier = (m) => {
+		if(score < price*m) return;
+		price = price * m
+		multiplier = multiplier*m;
+		score = score - 10;
+		countElement.innerHTML = score;
 
-document.getElementById("buyCursorBtn").onclick = function() {
-	if (guardianCounter >= cursorCost) {
-		guardianCounter -= cursorCost;
-		cursorCount++;
-		cps++;
-	}
 }
-setInterval(function() {
-	guardianCounter += cps;
-},1000);
+ 
 
-cursorCountElement = document.getElementById("cursorCount");
-setInterval(function() {
-	guardianCounter += cps;
-	countElement.innerHTML = guardianCounter;
-},1000);
 
-document.getElementById("buyCursorBtn").onclick = function() {
-	guardianCounter -= cursorCost;
-	countElement.innerHTML = guardianCounter;
-	cursorCount++;
-	cursorCountElement.innerHTML = cursorCount;
-	cps++;
-}*/
+
 
 
