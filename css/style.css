@@ -1,7 +1,74 @@
 body {
   background-image: url(/Assets/img/Espace.jpg);
-  color: white;
-  display: flex;
-  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e6dfdf;
   font-family: "Guardians", Fantasy, Sans-serif;
+}
+
+.header {
+  grid-area: header;
+}
+
+.left {
+  grid-area: left;
+}
+
+.main {
+  grid-area: main;
+}
+
+.right {
+  grid-area: right;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header header " "left main right" "footer footer footer";
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-gap: 10px;
+}
+
+.header {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  font-size: 25;
+  text-align: justify;
+}
+.left h2 {
+  font-size: 30;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.footer {
+  display: inline-flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.footer p {
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
