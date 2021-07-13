@@ -5,12 +5,16 @@ $MyColor: rgb(230, 223, 223);
 body{
     background-image: url(/Assets/img/Espace.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: fixed;
     color:$MyColor;
     //display: flex;
     //justify-content: center;
     font-family: $MyFont;
     
+}
+img{
+    height: 500px;
+    width: auto;
 }
 
 .header { grid-area: header; }
@@ -37,7 +41,7 @@ body{
     font-size: 30px;
     //margin:20px;
     padding: 10px;
-    
+  
 }
 .left{
     display: flex;
@@ -53,7 +57,7 @@ body{
 }
 .main{
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     justify-content: center;
     
 }
@@ -63,7 +67,8 @@ body{
     float:right;
     
     input:disabled{
-        background-color: grey;
+        background-color: transparent;
+        color: transparent;
     }
     input {
         font-family: $MyFont;
