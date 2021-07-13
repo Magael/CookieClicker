@@ -5,17 +5,13 @@ $MyColor: rgb(230, 223, 223);
 body{
     background-image: url(/Assets/img/Espace.jpg);
     background-repeat: no-repeat;
-    background-size: fixed;
+    background-size: cover;
     color:$MyColor;
-    //display: flex;
-    //justify-content: center;
+    font-weight: lighter;
     font-family: $MyFont;
     
 }
-img{
-    height: 500px;
-    width: auto;
-}
+
 
 .header { grid-area: header; }
 .left { grid-area: left; }
@@ -38,9 +34,13 @@ img{
 .header{
     display: inline-flex;
     justify-content: center;
-    font-size: 30px;
+    
     //margin:20px;
-    padding: 10px;
+    //padding: 10px;
+        img {
+        width: 50%;
+        height: 50%;
+   }
   
 }
 .left{
@@ -59,7 +59,14 @@ img{
     display: flex;
     //flex-direction: column;
     justify-content: center;
-    
+    font-size: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    img{
+    height: 500px;
+    width: auto;
+   
+}
 }
 .right{
     display: flex;
