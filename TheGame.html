@@ -22,13 +22,16 @@
 
         <form action="">
             <div>
-                <label id="cursorCost">Price: 20</label><input type="button" id="multiplierTwo" class="btn-multiplier" value="x2" data-multiplier="2" disabled="">
+                <label id="cursorCost">Price: 20</label><input type="button" id="multiplierTwo" class="btn-multiplier" value="x2" data-multiplier="2" disabled>
             </div>
             <div>
-                <label id="cursorCost1">Price: 30</label><input type="button" id="multiplierThree" class="btn-multiplier" value="x3" data-multiplier="3" disabled="">
+                <label id="cursorCost1">Price: 30</label><input type="button" id="multiplierThree" class="btn-multiplier" value="x3" data-multiplier="3" disabled>
             </div>
             <div>
-                <label></label><input type="button" id="btn-auto" value="auto clicker" data-multiplier="10" onclick="autoClick()">
+                <label></label><input type="button" id="btn-auto" class="btn-bonus" value="auto clicker" data-multiplier="20" onclick="autoClick()" disabled>
+            </div>
+            <div>
+                <label></label><input type="button" id="btn-scoreBonus" class="btn-bonus" value="bonus clicker" data-multiplier="20" onclick="bonusClick()" disabled>
             </div>
         </form>
 

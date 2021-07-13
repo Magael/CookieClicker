@@ -43,14 +43,33 @@ const pricing = () => {
 pricing();
 
 const autoClick = () => {
+	pricing();
   let count = 1;
   let autoClickMethod = setInterval(function(){
+		document.getElementById("btn-auto").value = 30 - count;
   score += counter;
   document.getElementById("count").textContent = score;
-  if(count == 30) clearInterval(autoClickMethod);
+  if(count == 30) {
+			clearInterval(autoClickMethod);
+			return document.getElementById("btn-auto").value = "auto click";
+		}
   count++;
   }, 1000);
 }
 
+const bonusClick = () => {
+	pricing();
+  let count = 1;
+  let autoClickMethod = setInterval(function(){
+		document.getElementById("btn-scoreBonus").value = 30 - count;
+  counter = score;
+  document.getElementById("count").textContent = score;
+  if(count == 30) {
+			clearInterval(autoClickMethod);
+			counter = 1;
+			return document.getElementById("btn-scoreBonus").value = "bonus clicker"
+		};
+  count++;
+  }, 1000);
 
-
+	}
