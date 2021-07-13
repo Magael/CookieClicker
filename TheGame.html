@@ -17,16 +17,20 @@
         <!--background-->
         <!--counter-->
         <p>
-            <span id="count">0</span> Groot
+            <span></span><span id="count">0</span> Groot
         </p>
-        <!--counter per seconds-->
-        <div class="item" id="cursor">
-            Cursors: <span id="cursorCount">0</span><br>
-            x2 Cost: <label class="cursorCost">20</label><input type="button" id="multiplierTwo" value="x2" onclick="callMultiplier(2)">
-            x3 Cost: <label class="cursorCost">30</label><input type="button" id="multiplierThree" value="x3" onclick="callMultiplier(3)">
-        </div>
 
-
+        <form action="">
+            <div>
+                <label id="cursorCost">Price: 20</label><input type="button" id="multiplierTwo" class="btn-multiplier" value="x2" data-multiplier="2" disabled="">
+            </div>
+            <div>
+                <label id="cursorCost1">Price: 30</label><input type="button" id="multiplierThree" class="btn-multiplier" value="x3" data-multiplier="3" disabled="">
+            </div>
+            <div>
+                <label></label><input type="button" id="btn-auto" value="auto clicker" data-multiplier="10" onclick="autoClick()">
+            </div>
+        </form>
 
 
     <script src="Assets/script.js"></script>
