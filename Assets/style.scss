@@ -1,8 +1,11 @@
-//$MyFont:
+$MyFont: 'Guardians', Fantasy, Sans-serif;
 $MyColor: white;
 //$MyFontSize:
 
 body{
     background-image: url(/Assets/img/Espace.jpg);
     color:$MyColor;
+    display: flex;
+    justify-content: center;
+    font-family: $MyFont;
 }

@@ -1,4 +1,7 @@
 body {
   background-image: url(/Assets/img/Espace.jpg);
   color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Guardians", Fantasy, Sans-serif;
 }/*# sourceMappingURL=style.css.map */
