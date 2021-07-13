@@ -10,31 +10,61 @@
         <link rel="stylesheet" href="/css/style.min.css">
     </head>
     <body>
+        <div class="container">
+            <div class="header">
+                <h1>Click on the guardian!!</h1>
+            </div>
+            <!--Intructions to do-->
+            <div class="left">
+                <h2>What to do!</h2>
+                <p>Welcome to our guardian clicker, we have 15 characters for you to discover.</p>
+                <p>The more you click the more characters you'll see!!!! Can you reach the end?</p>
+                <p>Groot is here to help you!!</p>
+            </div>
+            <div class="main">
+            <!--Images-->
+                <img src="Assets/img/babygroot.png" alt="Groot" id="groot1">
+            </div>
+            <div class="right">
+            <!--counter-->
+                <p>
+                    <span id="count">0</span> Groot
+                </p>
+                <!--counter per seconds-->
+                <div class="item" id="cursor">
+                  <form action="">
+                    <div>
+                        <label id="cursorCost">Price: 20</label><input type="button" id="multiplierTwo" class="btn-multiplier" value="x2" data-multiplier="2" disabled>
+                    </div>
+                    <div>
+                        <label id="cursorCost1">Price: 30</label><input type="button" id="multiplierThree" class="btn-multiplier" value="x3" data-multiplier="3" disabled>
+                    </div>
+                    <div>
+                        <label></label><input type="button" id="btn-auto" class="btn-bonus" value="auto clicker" data-multiplier="20" onclick="autoClick()" disabled>
+                    </div>
+                    <div>
+                        <label></label><input type="button" id="btn-scoreBonus" class="btn-bonus" value="bonus clicker" data-multiplier="20" onclick="bonusClick()" disabled>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Made by:</p>
+                <p>Elsa da Silveira</p>
+                <p>Evelyne Colaço Garcia</p>
+                <p>Rayane Lamri</p>
+            </div>
+        </div>
+
         <h1>Click on the guardian!!</h1>
         <!--Intructions to do-->
         <!--Images-->
-        <img src="Assets/img/babygroot.png" alt="Groot" id="groot1">
-        <!--background-->
+        <img alt="Groot" id="groot1">
+        <!--backgroundsrc="Assets/img/babygroot.png"-->
         <!--counter-->
         <p>
             <span></span><span id="count">0</span> Groot
         </p>
-
-        <form action="">
-            <div>
-                <label id="cursorCost">Price: 20</label><input type="button" id="multiplierTwo" class="btn-multiplier" value="x2" data-multiplier="2" disabled>
-            </div>
-            <div>
-                <label id="cursorCost1">Price: 30</label><input type="button" id="multiplierThree" class="btn-multiplier" value="x3" data-multiplier="3" disabled>
-            </div>
-            <div>
-                <label></label><input type="button" id="btn-auto" class="btn-bonus" value="auto clicker" data-multiplier="20" onclick="autoClick()" disabled>
-            </div>
-            <div>
-                <label></label><input type="button" id="btn-scoreBonus" class="btn-bonus" value="bonus clicker" data-multiplier="20" onclick="bonusClick()" disabled>
-            </div>
-        </form>
-
 
     <script src="Assets/script.js"></script>
     </body>
