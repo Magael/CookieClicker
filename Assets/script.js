@@ -40,6 +40,8 @@ if ( score >= 1000) {
 	document.getElementById("groot1").src="/Assets/img/babygroot.png";
 }}
 
+x();
+
 //+1 each click
 groot.addEventListener("click", (e) => {
 	x();
