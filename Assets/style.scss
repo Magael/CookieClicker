@@ -44,7 +44,8 @@ body{
     flex-direction: column;
     float:left;
     font-size: 25;
-    text-align: justify;    
+    text-align: left; 
+    padding: 15px;   
     h2{
         font-size: 30;
         text-align: center;
@@ -60,7 +61,21 @@ body{
     display: flex;
     flex-direction: column;
     float:right;
-    //text-align:;
+    
+    input:disabled{
+        background-color: grey;
+    }
+    input {
+        font-family: $MyFont;
+        color:black;
+        border-radius: 10px;
+        margin: 5px;
+        background-color: goldenrod;
+    }
+    form{
+        margin:5px;
+    }
+    
         
 }
 

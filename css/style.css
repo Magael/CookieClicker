@@ -45,7 +45,8 @@ body {
   flex-direction: column;
   float: left;
   font-size: 25;
-  text-align: justify;
+  text-align: left;
+  padding: 15px;
 }
 .left h2 {
   font-size: 30;
@@ -62,6 +63,19 @@ body {
   display: flex;
   flex-direction: column;
   float: right;
+}
+.right input:disabled {
+  background-color: grey;
+}
+.right input {
+  font-family: "Guardians", Fantasy, Sans-serif;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: goldenrod;
+}
+.right form {
+  margin: 5px;
 }
 
 .footer {
