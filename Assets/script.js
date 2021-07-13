@@ -68,7 +68,7 @@ Array.from(document.getElementsByClassName("btn-multiplier")).map(
 
 //if score > price => button is displayed
 const checkDisable = () => {
- Array.from(document.getElementsByClassName("btn-multiplier")).map(btn => {
+ Array.from(document.querySelectorAll("input")).map(btn => {
   if(score < price * btn.dataset.multiplier) return btn.disabled = true;
   btn.disabled = false;
  })
@@ -77,15 +77,17 @@ const checkDisable = () => {
 
 //uprage the price of all multipliers
 const pricing = () => {
- Array.from(document.getElementsByClassName("btn-multiplier")).map(btn => btn.previousSibling.textContent = `Price: ${price * btn.dataset.multiplier}`)
+ Array.from(document.querySelectorAll("input")).map(btn => btn.previousSibling.textContent = `Price: ${price * btn.dataset.multiplier}`)
 }
 
 pricing();
 
 const autoClick = () => {
+	checkDisable();
 	pricing();
   let count = 1;
   let autoClickMethod = setInterval(function(){
+			document.getElementById("btn-auto").disabled = true;
 			x();
 		document.getElementById("btn-auto").value = 30 - count;
   score += counter;
@@ -99,9 +101,11 @@ const autoClick = () => {
 }
 
 const bonusClick = () => {
+	checkDisable();
 	pricing();
   let count = 1;
   let autoClickMethod = setInterval(function(){
+			document.getElementById("btn-scoreBonus").disabled = true;
 			x();
 		document.getElementById("btn-scoreBonus").value = 30 - count;
   counter = score;
@@ -109,7 +113,7 @@ const bonusClick = () => {
   if(count == 30) {
 			clearInterval(autoClickMethod);
 			counter = 1;
-			return document.getElementById("btn-scoreBonus").value = "bonus clicker"
+			return document.getElementById("btn-scoreBonus").value = "bonus clicker";
 		};
   count++;
   }, 1000);
