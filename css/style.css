@@ -8,113 +8,75 @@ body {
 }
 
 .header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: header;
 }
 
 .left {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: left;
 }
 
 .main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: main;
 }
 
 .right {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: right;
 }
 
 .footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: footer;
 }
 
 .container {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: 'header header header ' 'left main right' 'footer footer footer';
-  -ms-grid-columns: 1fr 6fr 1fr;
-      grid-template-columns: 1fr 6fr 1fr;
+  grid-template-areas: "header header header " "left main right" "footer footer footer";
+  grid-template-columns: 1fr 6fr 1fr;
   grid-gap: 10px;
 }
 
 .header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .header img {
   width: 50%;
   height: 50%;
 }
 
 .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   float: left;
   font-size: 25;
   text-align: left;
   padding: 15px;
 }
-
 .left h2 {
   font-size: 30;
   text-align: center;
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
 }
-
 .main img {
   height: 500px;
   width: auto;
 }
 
 .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   float: right;
 }
-
 .right input:disabled {
   background-color: transparent;
   color: transparent;
 }
-
 .right input {
   font-family: "Guardians", Fantasy, Sans-serif;
   color: black;
@@ -122,22 +84,15 @@ body {
   margin: 5px;
   background-color: goldenrod;
 }
-
 .right form {
   margin: 5px;
 }
 
 .footer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   text-align: center;
 }
-
 .footer p {
   padding: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
