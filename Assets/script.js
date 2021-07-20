@@ -6,35 +6,36 @@ let multi = 1;
 let price = 10;
 
 let x = () => {
-if ( score >= 1000) {
+if ( score >= 4915200) {
 	document.getElementById("groot1").src="Assets/img/guardiansgroup.png";
-} else if ( score >= 720) {
+
+} else if ( score >= 2457600) {
 	document.getElementById("groot1").src="Assets/img/peterquill3.png";
-} else if ( score >= 650) {
+} else if ( score >= 1228800) {
 	document.getElementById("groot1").src="Assets/img/peterquill2.png";
-} else if ( score >= 580) {
+} else if ( score >= 614400) {
 	document.getElementById("groot1").src="Assets/img/peterquill.png";
-} else if ( score >= 510) {
+} else if ( score >= 307200) {
 	document.getElementById("groot1").src="Assets/img/gamora3.png";
-} else if ( score >= 450) {
+} else if ( score >= 153600) {
 	document.getElementById("groot1").src="Assets/img/gamora2.png";
-} else if ( score >= 390) {
+} else if ( score >= 76800) {
 	document.getElementById("groot1").src="Assets/img/gamora.png";
-} else if ( score >= 330) {
+} else if ( score >= 38400) {
 	document.getElementById("groot1").src="Assets/img/drax2.png";
-} else if ( score >= 280) {
+} else if ( score >= 19200) {
 	document.getElementById("groot1").src="Assets/img/drax1.png";
-} else if ( score >= 230) {
+} else if ( score >= 9600) {
 	document.getElementById("groot1").src="Assets/img/drax.png";
-} else if ( score >= 180) {
+} else if ( score >= 4800) {
 	document.getElementById("groot1").src="Assets/img/rocket2.png";
-} else if ( score >= 140) {
+} else if ( score >= 2400) {
 	document.getElementById("groot1").src="Assets/img/rocket1.png";
-} else if ( score >= 100) {
+} else if ( score >= 1200) {
 	document.getElementById("groot1").src="Assets/img/rocket.png";
-} else if ( score >= 60) {
+} else if ( score >= 600) {
 	document.getElementById("groot1").src="Assets/img/babygroot2.png";
-}  else if ( score >= 30) {
+}  else if ( score >= 300) {
 	document.getElementById("groot1").src="Assets/img/groot.png";
 } else {
 	document.getElementById("groot1").src="Assets/img/babygroot.png";
@@ -55,7 +56,7 @@ Array.from(document.getElementsByClassName("btn-multiplier")).map(
  btn => {
   btn.addEventListener("click", (e) => {
 			x();
-   let myPrice = price * e.target.dataset.multiplier;
+   let myPrice = price * e.target.dataset.multiplier/10;
    price += score; 
    score -= myPrice;
    multi *= e.target.dataset.multiplier;
@@ -120,3 +121,6 @@ const bonusClick = () => {
 
 	}
 
+const bonusPrice = () => {
+
+}
